@@ -1,0 +1,49 @@
+Java 8 provides following features for Java Programming:
+======================================================
+	Lambda expressions,
+	Method references,
+	Functional interfaces,
+	Stream API,
+	Default methods,
+	Base64 Encode Decode,
+	Static methods in interface,
+	Optional class,
+	Collectors class,
+	ForEach() method,
+	Nashorn JavaScript Engine,
+	Parallel Array Sorting,
+	Type and Repating Annotations,
+	IO Enhancements,
+	Concurrency Enhancements,
+	JDBC Enhancements etc.
+	
+	
+	https://www.javatpoint.com/java-date
+	
+	
+	Java 8 has accompanied the accompanying improvements/changes of HashMap objects 
+if there should be an occurrence of high collisions.
+---------------------------------------------------
+1.The alternative String hash function included Java 7 has been removed.
+
+2.Buckets containing an expansive number of impacting keys will store their entrances in a balanced tree 
+  rather than a linked list after a specific limit is come to.
+
+3.Above changes to guarantee the execution of O(log(n)) in most pessimistic scenario situations (hash function 
+  isn't conveying keys appropriately) and O(1) with legitimate hashCode().
+  
+ 
+Q.How is linked list replaced with the binary tree?
+---------------------------------------------------
+1.In Java 8, HashMap replaces linked list with a binary tree when the quantity of components in a bucket achieves the specific 
+  edge. While converting the list to the binary tree, the hashcode is utilized as a branching variable. On the off chance that 
+  there are two distinctive hashcodes in a similar bucket, one is viewed as greater and goes to one side of the tree and another 
+  to one side.
+
+2.In any case, when both the hashcodes are equivalent, HashMap accept that the keys are comparable, and compares the key to 
+  decide the bearing with the goal that some request can be kept up. It is a decent practice to make the keys of HashMap 
+  comparable. HashMap trusts that the keys are Comparable so it can build up some order. This isn't a necessity of HashMap 
+  keys, yet clearly a decent practice. In the event that keys are not comparable, don't expect any execution improvements 
+  if there should arise an occurrence of heavy hash collisions.
+
+->This JDK 8 change applies just to HashMap, LinkedHashMap and ConcurrentHashMap.

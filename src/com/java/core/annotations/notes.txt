@@ -1,0 +1,7 @@
+
+1.To find all the usages of the specific annotation we can scan using below code
+
+Set<Method> methodsAnnotatedWith = new Reflections(
+     "my.package", 
+     new MethodAnnotationsScanner()
+ ).getMethodsAnnotatedWith(SomeAnnotation.class);

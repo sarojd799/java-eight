@@ -1,0 +1,24 @@
+
+
+1.2-Sum problem:
+
+var arr = [1,2,6,17,19,13,0]
+var target = 19;
+var index=0;
+var result = []
+
+function Test() {
+    if(index === arr.length -2) {
+        console.log(result)
+        return;
+    }
+    for(let i= index; i< arr.length-2;i++) {
+        if(arr[index]+arr[i+1] == target) {
+            result.push(`${arr[index]},${arr[i+1]}`)
+        }
+    }
+    index = index + 1
+    Test();
+}
+
+Test();

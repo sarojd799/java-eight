@@ -1,0 +1,31 @@
+
+Inter conversion between collections:-
+-------------------------------------
+1.ArrayList l = new ArrayList(Collection c)[3]
+2.LinkedList l = new LinkedList(Collecion c)[2]
+3.Vector v = new Vector(Collection  c) [4]
+4.HashSet h = new HashSet(Collection c) [4]
+5.LinkedHashSet lhs = new LinkedHashSet(Collection c)[4]
+6.TreeSet t= new TreeSet(Collection c) [4] {Collection needs to be homogeneous and comparable}
+7.HashMap h = new HashMap(Map m);
+8.LinkedHashMap lhm =  new LinkedHashMap(Map m) [5]
+9.IdentityHashMap ihm = new IdentityHashMap(Map m  [3]
+10.TreeMap sm = new TreeMap(Map m);
+11.TreeMap sm1 = new TreeMap(SortedMap sm);
+12.Hashtable h = new Hashtable(Map m);
+13.PriorityQueue q = new PriorityQueue(Collection c)
+14.PriorityQueue q = new PriorityQueue(SortedSet s)
+13.ArrayDeque ad = new ArrayDeque(Collection c)
+
+Inter conversion between array and collection:-
+----------------------------------------------
+Array to collection:- java.util.Arrays.asList(object[] a) returns unmodifiable list
+
+List to Array: - List.of(1,2,3).toArray()
+
+
+
+
+
+
+

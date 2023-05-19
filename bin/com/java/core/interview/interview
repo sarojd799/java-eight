@@ -1,0 +1,18 @@
+q1. How to disable web server in spring boot?
+https://www.baeldung.com/spring-boot-no-web-server#:~:text=The%20easiest%20way%20to%20prevent,POM%20or%20Gradle%20build%20file
+
+1. do not include in the dependency
+2. use spring application builder
+3. use application properties : spring.main.web-application-type=none
+
+q2. How to prevent autowiring for specific component?
+
+using @Profile
+
+
+q3.
+
+
+Q.HOw to send response with http status in spring boot
+
+new ResponseEntity<Branch>(branch, HttpStatus.OK);
